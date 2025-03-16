@@ -25,7 +25,7 @@ namespace OOP.ManageProduct
                     conn.Open();
                     Console.WriteLine("Connected to MySQL");
 
-                    // Corrected Query: Do NOT insert 'id'
+                    
                     string query = "INSERT INTO products (`productName`, `productPrice`, `description`, `category`, `stock`) VALUES (@name, @price, @description, @category, @stock)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
